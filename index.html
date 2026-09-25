@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS Delivery | Plataforma Digital de Vendas e Gestão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal as primary for a modern tech feel
+                            600: '#0d9488',
+                            900: '#134e4a',
+                            950: '#042f2e',
+                        },
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .mockup-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15), 0 0px 15px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 rounded bg-dark flex items-center justify-center text-white font-bold text-sm">ITS</div>
+                    <span class="font-bold text-xl tracking-tight text-dark">ITS Delivery</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#recursos" class="text-sm font-medium text-slate-600 hover:text-dark transition-colors">Recursos</a>
+                    <a href="#experiencia" class="text-sm font-medium text-slate-600 hover:text-dark transition-colors">Experiência</a>
+                    <a href="#painel" class="text-sm font-medium text-slate-600 hover:text-dark transition-colors">Gestão</a>
+                    <a href="#para-quem" class="text-sm font-medium text-slate-600 hover:text-dark transition-colors">Para quem é</a>
+                </div>
+                <div class="flex">
+                    <a href="#contato" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-dark hover:bg-slate-800 shadow-sm transition-all hover:shadow-md">
+                        Falar com Consultor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO 1 — HERO -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <!-- Background subtle shapes -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden -z-10 pointer-events-none">
+            <div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-brand-50/50 blur-3xl"></div>
+            <div class="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-blue-50/50 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-dark mb-6 leading-tight max-w-4xl mx-auto">
+                Seu negócio merece muito mais do que um simples cardápio.
+            </h1>
+            <p class="mt-4 text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Tenha uma plataforma própria e profissional para receber pedidos, apresentar seus produtos e vender online com a verdadeira identidade da sua empresa.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                <a href="#contato" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-full text-white bg-dark hover:bg-slate-800 shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
+                    QUERO CONHECER O ITS DELIVERY
+                </a>
+                <a href="#como-funciona" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-full text-dark bg-white border border-gray-200 hover:bg-gray-50 shadow-sm transition-all">
+                    VER COMO FUNCIONA
+                </a>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-500">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Plataforma personalizada</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Domínio próprio</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Suporte especializado</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Pronto para seu negócio</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Imagem de Destaque Hero (Mockup) -->
+    <section class="relative -mt-10 pb-20 px-4 z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="rounded-3xl overflow-hidden mockup-shadow border border-gray-100 bg-white p-2 md:p-4">
+                <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719605.jpg" alt="Interface ITS Delivery" class="w-full object-cover rounded-2xl max-h-[70vh] object-top">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2 — O QUE É O ITS DELIVERY -->
+    <section id="o-que-e" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100 text-brand-600 text-sm font-semibold mb-6">
+                        <i class="fa-solid fa-layer-group"></i> Solução Completa
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 leading-tight">
+                        Uma plataforma criada exclusivamente para o seu negócio.
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        Esqueça os links genéricos e os catálogos limitados em PDF. O ITS Delivery permite que sua empresa tenha sua <strong>própria presença digital</strong> de alta qualidade.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed border-l-4 border-brand-500 pl-4 py-1">
+                        Não é apenas um site. É uma plataforma de vendas unida a um sistema de gestão desenhado para quem precisa de agilidade, organização e resultados.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden mockup-shadow border border-gray-200 ml-auto w-4/5">
+                        <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719609.jpg" alt="Loja Comida da Márcia" class="w-full">
+                    </div>
+                    <div class="absolute bottom-[-10%] left-0 z-0 rounded-2xl overflow-hidden mockup-shadow border border-gray-200 w-3/5 opacity-90 transform -rotate-3 scale-95">
+                        <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719605.jpg" alt="Loja The King Pet Shop" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3 — POR QUE TER UMA PLATAFORMA PRÓPRIA? -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Por que ter sua própria plataforma?</h2>
+                <p class="text-lg text-slate-500">Mude a forma como os clientes enxergam e compram da sua empresa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefício 1 -->
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-dark text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Sua Própria Marca</h3>
+                    <p class="text-slate-600">Destaque-se da concorrência com um ambiente que respira a sua identidade visual.</p>
+                </div>
+                
+                <!-- Benefício 2 -->
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-dark text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Endereço Exclusivo</h3>
+                    <p class="text-slate-600">Seu próprio endereço na internet. Mais fácil de divulgar e lembrar.</p>
+                </div>
+
+                <!-- Benefício 3 -->
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-dark text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Profissionalismo</h3>
+                    <p class="text-slate-600">Transmita credibilidade imediata. Seus clientes percebem o valor de um sistema moderno.</p>
+                </div>
+
+                <!-- Benefício 4 -->
+                <div class="p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors border border-gray-100">
+                    <div class="w-12 h-12 rounded-xl bg-dark text-white flex items-center justify-center text-xl mb-6 shadow-sm">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Mais Autonomia</h3>
+                    <p class="text-slate-600">Você no controle total. Sem depender de terceiros para atualizar seus produtos ou preços.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4 — PRINCIPAIS RECURSOS -->
+    <section id="recursos" class="py-24 bg-dark text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Tudo o que você precisa em um só lugar.</h2>
+                <p class="text-lg text-slate-300">Recursos poderosos desenhados para simplificar suas vendas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fa-solid fa-book-open text-brand-400 text-2xl mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">Cardápio & Catálogo</h4>
+                    <p class="text-slate-400 text-sm">Organize seus produtos com fotos, categorias (ex: Ração, Brinquedos) e destaque seus melhores itens.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fa-solid fa-cart-shopping text-brand-400 text-2xl mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">Carrinho Dinâmico</h4>
+                    <p class="text-slate-400 text-sm">Experiência de compra fluida com barra de carrinho visível e checkout simples e direto.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fa-solid fa-list-check text-brand-400 text-2xl mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">Gestão de Pedidos</h4>
+                    <p class="text-slate-400 text-sm">Painel completo separando pedidos Novos, Ativos e Finalizados. Controle total do fluxo.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fa-solid fa-motorcycle text-brand-400 text-2xl mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">Gestão de Entregadores</h4>
+                    <p class="text-slate-400 text-sm">Controle sua frota. Monitore quem está online, cadastre motoboys e envie links de acesso.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fa-solid fa-mobile-screen-button text-brand-400 text-2xl mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">App do Entregador</h4>
+                    <p class="text-slate-400 text-sm">Aplicativo dedicado para seus entregadores acompanharem corridas, valores a receber e status.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 p-6 rounded-2xl backdrop-blur-sm">
+                    <i class="fa-solid fa-download text-brand-400 text-2xl mb-4"></i>
+                    <h4 class="text-lg font-bold mb-2">Aplicativo Instalável</h4>
+                    <p class="text-slate-400 text-sm">Seus clientes podem instalar sua loja diretamente no celular com um clique, como um app nativo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5 — EXPERIÊNCIA DO CLIENTE -->
+    <section id="experiencia" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Comprar nunca foi tão fácil.</h2>
+                <p class="text-lg text-slate-500">Uma experiência desenhada para não ter atritos e converter visitantes em clientes.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24">
+                
+                <div class="flex-1 max-w-sm">
+                    <div class="rounded-3xl overflow-hidden mockup-shadow border-[6px] border-dark bg-white">
+                        <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719609.jpg" alt="Fluxo de Compra" class="w-full">
+                    </div>
+                </div>
+
+                <div class="flex-1 space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">1</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark mb-1">Acessa sua plataforma</h4>
+                            <p class="text-slate-600">O cliente entra no seu link e vê uma loja com a sua cara, rápida e organizada.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">2</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark mb-1">Escolhe os produtos</h4>
+                            <p class="text-slate-600">Navega por categorias, vê destaques, fotos e preços de forma super intuitiva.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">3</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark mb-1">Adiciona ao carrinho</h4>
+                            <p class="text-slate-600">Com um toque, o item vai para o carrinho, que fica sempre visível e acessível.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-dark text-white flex items-center justify-center font-bold flex-shrink-0 mt-1">4</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark mb-1">Confirma e Paga</h4>
+                            <p class="text-slate-600">Informa o endereço, escolhe o pagamento (como Pix) e o pedido chega mastigado para você.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 6 — PAINEL ADMINISTRATIVO -->
+    <section id="painel" class="py-24 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1 mt-12 lg:mt-0 relative">
+                    <!-- Grid of admin screens -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-2xl overflow-hidden mockup-shadow border border-gray-200 mt-8">
+                            <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719598.jpg" alt="Gestão de Pedidos" class="w-full">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden mockup-shadow border border-gray-200">
+                            <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719595.jpg" alt="Gestão de Catálogo" class="w-full">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6 leading-tight">
+                        Você também tem o controle de tudo. Na palma da mão.
+                    </h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Esqueça a bagunça no WhatsApp ou anotações em papel. O ITS Delivery vem com um painel administrativo completo e fácil de usar no seu próprio celular.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Aceite e avance pedidos com 1 clique.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Veja endereço completo, forma de pagamento e itens.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Gerencie seu catálogo: adicione, edite preços e categorias.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="text-slate-700 font-medium">Controle sua frota de entregadores em tempo real.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7 — DOMÍNIO PRÓPRIO -->
+    <section class="py-24 bg-dark text-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <i class="fa-solid fa-link text-brand-500 text-5xl mb-6"></i>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Seu negócio com endereço próprio na internet.</h2>
+            <p class="text-xl text-slate-300 mb-10 leading-relaxed">
+                Pare de enviar links confusos de aplicativos de terceiros. Com o ITS Delivery, você pode ter o seu próprio domínio.
+            </p>
+            
+            <div class="inline-block bg-slate-800/80 border border-slate-600 rounded-full px-6 py-4 mb-12 shadow-xl">
+                <span class="text-slate-400 text-lg sm:text-2xl font-mono">www.</span>
+                <span class="text-white text-lg sm:text-2xl font-bold font-mono tracking-wide">suaempresa</span>
+                <span class="text-brand-400 text-lg sm:text-2xl font-mono">.com.br</span>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm font-medium">
+                <div><i class="fa-solid fa-shield-halved text-brand-400 block text-2xl mb-2"></i> Mais Confiança</div>
+                <div><i class="fa-solid fa-bullhorn text-brand-400 block text-2xl mb-2"></i> Fácil de Divulgar</div>
+                <div><i class="fa-solid fa-briefcase text-brand-400 block text-2xl mb-2"></i> Profissionalismo</div>
+                <div><i class="fa-solid fa-id-card text-brand-400 block text-2xl mb-2"></i> Identidade Própria</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8 — PERSONALIZAÇÃO -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Seu negócio. Sua identidade.</h2>
+                <p class="text-lg text-slate-500">A plataforma se adapta à sua marca, não o contrário. Seu cliente sentirá que está em um ambiente totalmente seu.</p>
+            </div>
+
+            <div class="flex justify-center mb-16">
+                <div class="rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white inline-block">
+                     <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719601.jpg" alt="Diferentes identidades" class="max-w-xs md:max-w-md h-auto">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719605.jpg" alt="Exemplo Pet Shop" class="w-48 rounded-xl shadow-lg mb-6 border border-gray-200">
+                    <h4 class="text-xl font-bold text-dark mb-2">Visual Premium</h4>
+                    <p class="text-slate-600">Banners personalizados, suas cores e seu logotipo em destaque. Um ambiente sofisticado para encantar.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <img src="C:/Users/DJGUGA/.gemini/antigravity/brain/031f2283-833b-456c-9c69-6fccabe8b061/.user_uploaded/media_1790364719609.jpg" alt="Exemplo Restaurante" class="w-48 rounded-xl shadow-lg mb-6 border border-gray-200">
+                    <h4 class="text-xl font-bold text-dark mb-2">Para o seu nicho</h4>
+                    <p class="text-slate-600">Seja comida caseira, hambúrguer, pet shop ou até perfis públicos. A estrutura exibe o que mais importa para o seu público.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 9 — PARA QUEM É -->
+    <section id="para-quem" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Feito para negócios que querem crescer.</h2>
+                <p class="text-lg text-slate-500">O ITS Delivery é flexível e atende operações de diversos segmentos com excelência.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-3">🍔</div>
+                    <div class="font-bold text-dark">Hamburguerias</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-3">🍕</div>
+                    <div class="font-bold text-dark">Pizzarias</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-3">🍰</div>
+                    <div class="font-bold text-dark">Confeitarias</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-3">🐶</div>
+                    <div class="font-bold text-dark">Pet Shops</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-3">🍗</div>
+                    <div class="font-bold text-dark">Restaurantes</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
+                    <div class="text-4xl mb-3">🛒</div>
+                    <div class="font-bold text-dark">Outros Negócios</div>
+                </div>
+            </div>
+            
+            <p class="text-center text-slate-500 mt-10 max-w-2xl mx-auto">
+                Trabalhamos com soluções personalizadas. Não importa o seu segmento, nós preparamos a estrutura ideal para você ter presença digital e realizar negócios.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 11 — COMO FUNCIONA A CONTRATAÇÃO -->
+    <section id="como-funciona" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Começar é muito simples.</h2>
+                <p class="text-lg text-slate-500">Nós cuidamos da tecnologia pesada. Você cuida do seu negócio.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-8 left-10 right-10 h-0.5 bg-gray-100 z-0"></div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-dark text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md border-4 border-white">01</div>
+                    <h4 class="text-lg font-bold text-dark mb-2">Apresentação</h4>
+                    <p class="text-slate-500 text-sm">Você nos conta sobre o seu negócio, seus produtos e como funciona sua operação.</p>
+                </div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-dark text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md border-4 border-white">02</div>
+                    <h4 class="text-lg font-bold text-dark mb-2">Configuração</h4>
+                    <p class="text-slate-500 text-sm">A ITS Tech prepara e configura toda a plataforma base para você.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-dark text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md border-4 border-white">03</div>
+                    <h4 class="text-lg font-bold text-dark mb-2">Personalização</h4>
+                    <p class="text-slate-500 text-sm">Aplicamos sua identidade visual, logotipo e domínio.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-brand-500 text-white flex items-center justify-center text-2xl font-bold mb-6 shadow-md border-4 border-white">04</div>
+                    <h4 class="text-lg font-bold text-dark mb-2">Pronto!</h4>
+                    <p class="text-slate-500 text-sm">Você recebe seu acesso, tudo pronto e funcionando para começar a faturar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 12 — O QUE O CLIENTE RECEBE -->
+    <section class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden max-w-4xl mx-auto border border-gray-100">
+                <div class="bg-dark p-8 md:p-12 text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">O pacote completo da sua nova loja</h2>
+                    <p class="text-brand-100">Tudo o que está incluso ao adquirir o ITS Delivery</p>
+                </div>
+                <div class="p-8 md:p-12">
+                    <ul class="grid md:grid-cols-2 gap-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="block text-dark mb-1">Plataforma Digital Completa</strong>
+                                <span class="text-slate-500 text-sm">Acesso à loja virtual e painel administrativo.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="block text-dark mb-1">Personalização Visual</strong>
+                                <span class="text-slate-500 text-sm">Aplicação do seu logo e cores da marca.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="block text-dark mb-1">Configuração Inicial</strong>
+                                <span class="text-slate-500 text-sm">Deixamos a estrutura pronta para você operar.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="block text-dark mb-1">Domínio Próprio (Opcional)</strong>
+                                <span class="text-slate-500 text-sm">Configuração de endereço www.suaempresa.com.br.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="block text-dark mb-1">Estrutura Pronta</strong>
+                                <span class="text-slate-500 text-sm">Painel do logista, app do entregador e PWA para clientes.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand-500 text-xl mt-0.5"></i>
+                            <div>
+                                <strong class="block text-dark mb-1">Suporte e Orientação</strong>
+                                <span class="text-slate-500 text-sm">Acompanhamento para você extrair o máximo do sistema.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 10 — ITS TECH (Institucional) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-sm font-bold text-brand-500 tracking-widest uppercase mb-4">QUEM DESENVOLVE</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-dark mb-8">Por trás da tecnologia, existe a ITS Tech.</h3>
+            
+            <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                A <strong>ITS Tech</strong> é uma empresa de tecnologia focada em desenvolver soluções digitais personalizadas. Nosso objetivo é ajudar negócios a modernizarem suas operações, melhorarem sua presença digital e oferecerem experiências verdadeiramente profissionais aos seus clientes.
+            </p>
+
+            <div class="flex justify-center gap-8 text-slate-400">
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-code text-2xl"></i>
+                    <span class="text-xs font-bold uppercase">Tecnologia</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-lightbulb text-2xl"></i>
+                    <span class="text-xs font-bold uppercase">Inovação</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i class="fa-solid fa-headset text-2xl"></i>
+                    <span class="text-xs font-bold uppercase">Suporte</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 13 — CTA COMERCIAL -->
+    <section id="contato" class="py-24 bg-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Seu negócio pronto para o próximo nível.</h2>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+                Tenha uma solução digital profissional, personalizada e preparada para facilitar sua operação e encantar seus clientes.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-dark bg-brand-400 hover:bg-brand-300 shadow-xl transition-all hover:-translate-y-1">
+                    <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> QUERO TER O ITS DELIVERY
+                </a>
+                <a href="#" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-white bg-transparent border-2 border-slate-600 hover:bg-slate-800 transition-all">
+                    FALAR COM A ITS TECH
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 14 — RODAPÉ -->
+    <footer class="bg-slate-950 py-12 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-6 h-6 rounded bg-slate-800 flex items-center justify-center text-white font-bold text-xs">ITS</div>
+                        <span class="font-bold text-lg tracking-tight text-white">ITS Tech</span>
+                    </div>
+                    <p class="text-sm text-slate-500">Soluções digitais para negócios que querem evoluir.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-end">
+                    <span class="text-white font-bold mb-2 text-sm">Fale Conosco</span>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors" title="WhatsApp">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors" title="Instagram">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors" title="Site da ITS Tech">
+                            <i class="fa-solid fa-globe text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 ITS Tech. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0">O produto ITS Delivery é desenvolvido por ITS Tech.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Fixo WhatsApp Mobile -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="#contato" class="w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-2xl animate-bounce">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+</body>
+</html>
